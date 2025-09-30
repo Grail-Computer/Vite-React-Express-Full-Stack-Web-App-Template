@@ -66,8 +66,8 @@ This is a comprehensive full-stack web application template providing a complete
 ├── server/                       # Backend Express.js application
 │   ├── routes/                   # API route handlers
 │   ├── lib/                      # Server-side utilities
-│   ├── index.ts                  # Express server setup
-│   ├── routes.ts                 # Route registration
+│   ├── index.ts                  # Express server setup & hot reloader
+│   ├── backend.ts                # Route registration (registerRoutes(apiRouter))
 │   └── vite.ts                   # Vite integration for development
 ├── shared/                       # Shared types and utilities
 │   └── types.ts                  # Common TypeScript types
