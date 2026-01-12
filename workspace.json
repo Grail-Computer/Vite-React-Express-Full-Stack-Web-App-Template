@@ -1,0 +1,57 @@
+{
+  "name": "Full-Stack Web App",
+  "description": "Vite React + Express with PostgreSQL and R2 storage",
+  "infra": {
+    "provider": "railway",
+    "railway": {
+      "templateId": "i0DYzP"
+    }
+  },
+  "init": [
+    {
+      "name": "Install dependencies",
+      "command": "npm install"
+    },
+    {
+      "name": "Generate Prisma client",
+      "command": "npx prisma generate"
+    }
+  ],
+  "run": [
+    {
+      "name": "Dev server",
+      "command": "npm run dev"
+    }
+  ],
+  "env": {
+    "required": [
+      {
+        "key": "DATABASE_URL",
+        "label": "Database URL",
+        "description": "PostgreSQL connection string (auto-provisioned by Railway)"
+      }
+    ],
+    "optional": [
+      {
+        "key": "R2_ENDPOINT",
+        "label": "R2 Endpoint",
+        "description": "Cloudflare R2 endpoint (auto-provisioned by Railway)"
+      },
+      {
+        "key": "R2_BUCKET_NAME",
+        "label": "R2 Bucket Name",
+        "description": "Cloudflare R2 bucket name"
+      },
+      {
+        "key": "R2_ACCESS_KEY_ID",
+        "label": "R2 Access Key ID",
+        "description": "Cloudflare R2 access key"
+      },
+      {
+        "key": "R2_SECRET_ACCESS_KEY",
+        "label": "R2 Secret Access Key",
+        "description": "Cloudflare R2 secret access key"
+      }
+    ]
+  }
+}
