@@ -23,6 +23,17 @@
       "command": "npm run dev"
     }
   ],
+  "actions": [
+    {
+      "type": "prompt",
+      "icon": "https://www.svgrepo.com/show/409878/rocket.svg",
+      "name": "Publish",
+      "command": "",
+      "cwd": null,
+      "text": "Deploy this project as explained in .grail/railway_deployment.md",
+      "mode": "Agent"
+    }
+  ],
   "env": {
     "required": [
       {
